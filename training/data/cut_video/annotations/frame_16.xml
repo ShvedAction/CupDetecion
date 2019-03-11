@@ -1,0 +1,26 @@
+<annotation>
+	<folder>cut_video</folder>
+	<filename>frame_16.png</filename>
+	<path>/home/shved/project/opencv_tz/data/cut_video/frame_16.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cup</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1140</xmin>
+			<ymin>62</ymin>
+			<xmax>1280</xmax>
+			<ymax>334</ymax>
+		</bndbox>
+	</object>
+</annotation>
