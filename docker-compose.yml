@@ -1,0 +1,20 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    command: ./flask_runner.sh
+    volumes:
+      - ./src:/application
+    ports:
+      - "5000:5000"
+  jupiter:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    command: jupyter notebook --ip=0.0.0.0 --allow-root
+    volumes:
+      - ./src:/application
+    ports:
+      - "8888:8888"
