@@ -10,12 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
     handleButton.addEventListener("click", () => {
         const formData = new FormData()
         formData.append('file', fileInput.files[0])
+        const start = async function(){
+            const result = await fetch("/upload", {
+                method: "POST",
+                body: formData
+            })
+            const v1 = await result.json()
+            location.href = v1.target
+        }
 
-        fetch("/upload", {
-            method: "POST",
-            body: formData
-        }).then( res => {
-            window.location = res
-        })
+        start()
     })
 })

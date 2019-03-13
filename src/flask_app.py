@@ -16,15 +16,15 @@ def upload():
         file_path = 'static/tmp/' + f.filename
         f.save(file_path)
 
-        
         outfile_path = "static/tmp/handled_" + f.filename + ".avi"
-        
+
         app.logger.info(file_path)
         app.logger.info(outfile_path)
         app.logger.info("Video handling is starting...")
         higlight_cup(file_path, "/application/"+outfile_path)
         app.logger.info("higlight finished")
+        return  jsonify({"target": "/" + outfile_path})
 
-    return  "/"+outfile_path
+    return  jsonify({"target": "/static/tmp/handled_2018-02-2715_03_24.ogv.avi"})
 
 
