@@ -36,7 +36,7 @@ class Video:
         """
         frames should be iterator of bgr
         """
-        fourcc = cv2.VideoWriter_fourcc(*"H264")
+        fourcc = cv2.VideoWriter_fourcc(*'XVID')
         writer = cv2.VideoWriter(self._path, fourcc, fps, (width, height))
 
         for frame in frames:

@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, 'video_handling')
+
 from video import Video
 from cup_detection import SimpleHSVDetector, draw_detections
 

@@ -55,7 +55,7 @@ def windows_fill_calc(color_mask_matrix,  window_size=250, threshhold=0.5, overl
     min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(matchResult)
     
     #handmade normalization
-    res = matchResult / max_val 
+    res = matchResult /  max_val
     
     #plt.imshow(res, cmap="gray")
     results = []
