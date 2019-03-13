@@ -25,6 +25,6 @@ def upload():
         app.logger.info("higlight finished")
         return  jsonify({"target": "/" + outfile_path})
 
-    return  jsonify({"target": "/static/tmp/handled_2018-02-2715_03_24.ogv.avi"})
+    return  jsonify({"target": "/"})
 
 
